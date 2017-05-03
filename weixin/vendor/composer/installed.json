@@ -20,7 +20,7 @@
         "require-dev": {
             "composer/composer": "1.0.*@dev"
         },
-        "time": "2016-12-01 09:08:45",
+        "time": "2016-12-01T09:08:45+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "think\\composer\\Plugin"
@@ -69,7 +69,7 @@
             "phpunit/phpunit": "4.8.*",
             "sebastian/phpcpd": "2.*"
         },
-        "time": "2017-01-23 05:59:21",
+        "time": "2017-01-23T05:59:21+00:00",
         "type": "think-framework",
         "installation-source": "dist",
         "autoload": {
@@ -117,7 +117,7 @@
             "phpunit/phpunit": "4.8.*",
             "topthink/framework": "^5.0"
         },
-        "time": "2016-09-29 06:05:43",
+        "time": "2016-09-29T06:05:43+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -152,7 +152,7 @@
             "reference": "0c55455df26a1626a60d0dc35d2d89002b741d44",
             "shasum": ""
         },
-        "time": "2016-07-06 01:47:11",
+        "time": "2016-07-06T01:47:11+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -190,7 +190,7 @@
             "reference": "d26ddc47e85d2a1a41a6e38f155610a1c8f66f70",
             "shasum": ""
         },
-        "time": "2016-11-17 13:20:01",
+        "time": "2016-11-17T13:20:01+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -226,7 +226,7 @@
             "reference": "b2960f9b86c9231f593d5cfb84798176e332c987",
             "shasum": ""
         },
-        "time": "2016-10-17 03:31:17",
+        "time": "2016-10-17T03:31:17+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -267,7 +267,7 @@
         "require": {
             "php": ">=5.4.0"
         },
-        "time": "2016-12-21 04:21:12",
+        "time": "2016-12-21T04:21:12+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -306,7 +306,7 @@
             "reference": "e31ee4ec073c0ffc5dbc7292f8268661e5265091",
             "shasum": ""
         },
-        "time": "2016-10-08 10:53:21",
+        "time": "2016-10-08T10:53:21+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -348,7 +348,7 @@
         "suggest": {
             "ext-event": "For better performance."
         },
-        "time": "2016-12-22 14:28:34",
+        "time": "2016-12-22T14:28:34+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -393,7 +393,7 @@
         "require": {
             "workerman/workerman": "^3.3.0"
         },
-        "time": "2016-10-08 06:07:03",
+        "time": "2016-10-08T06:07:03+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -429,7 +429,7 @@
             "reference": "ed64408cdc4cdbd390365ba0906d208b987af520",
             "shasum": ""
         },
-        "time": "2016-12-01 07:08:40",
+        "time": "2016-12-01T07:08:40+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -471,7 +471,7 @@
             "topthink/think-helper": ">=1.0.4",
             "topthink/think-installer": ">=1.0.10"
         },
-        "time": "2016-12-01 04:29:39",
+        "time": "2016-12-01T04:29:39+00:00",
         "type": "think-extend",
         "extra": {
             "think-config": {
@@ -520,7 +520,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -585,7 +585,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -642,7 +642,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2017-01-03 13:51:32",
+        "time": "2017-01-03T13:51:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -690,7 +690,7 @@
             "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
             "shasum": ""
         },
-        "time": "2015-06-21 13:59:46",
+        "time": "2015-06-21T13:59:46+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -736,7 +736,7 @@
         "suggest": {
             "ext-uopz": "*"
         },
-        "time": "2015-10-12 03:26:01",
+        "time": "2015-10-12T03:26:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -786,7 +786,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2015-11-11 19:50:13",
+        "time": "2015-11-11T19:50:13+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -843,7 +843,7 @@
             "ext-mbstring": "*",
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-06-17 09:04:28",
+        "time": "2016-06-17T09:04:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -910,7 +910,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8 || ^5.0"
         },
-        "time": "2016-08-18 05:49:44",
+        "time": "2016-08-18T05:49:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -962,7 +962,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8"
         },
-        "time": "2015-12-08 07:14:41",
+        "time": "2015-12-08T07:14:41+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1018,7 +1018,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-11-19 09:18:40",
+        "time": "2016-11-19T09:18:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1086,7 +1086,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2015-06-14 21:17:01",
+        "time": "2015-06-14T21:17:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1135,7 +1135,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2015-06-21 13:50:34",
+        "time": "2015-06-21T13:50:34+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1187,7 +1187,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2015-10-02 06:51:40",
+        "time": "2015-10-02T06:51:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1239,7 +1239,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4|~5"
         },
-        "time": "2016-05-12 18:03:57",
+        "time": "2016-05-12T18:03:57+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1282,7 +1282,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2016-10-03 07:40:28",
+        "time": "2016-10-03T07:40:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1335,7 +1335,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.2"
         },
-        "time": "2016-11-15 14:06:22",
+        "time": "2016-11-15T14:06:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1396,7 +1396,7 @@
             "ext-xdebug": ">=2.2.1",
             "ext-xmlwriter": "*"
         },
-        "time": "2015-10-06 15:47:00",
+        "time": "2015-10-06T15:47:00+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1450,7 +1450,7 @@
             "phpunit/phpunit": "^4.6",
             "sebastian/version": "^1.0.1"
         },
-        "time": "2016-11-23 20:04:58",
+        "time": "2016-11-23T20:04:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1501,7 +1501,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.6"
         },
-        "time": "2015-12-27 11:43:31",
+        "time": "2015-12-27T11:43:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1559,7 +1559,7 @@
             "mockery/mockery": "^0.9.4",
             "phpunit/phpunit": "^5.2||^4.8.24"
         },
-        "time": "2016-11-25 06:54:22",
+        "time": "2016-11-25T06:54:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1610,7 +1610,7 @@
             "mockery/mockery": "^0.9.4",
             "phpunit/phpunit": "^4.4"
         },
-        "time": "2016-09-30 07:12:33",
+        "time": "2016-09-30T07:12:33+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1658,7 +1658,7 @@
             "phpspec/phpspec": "^2.0",
             "phpunit/phpunit": "^4.8 || ^5.6.5"
         },
-        "time": "2016-11-21 14:58:47",
+        "time": "2016-11-21T14:58:47+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1736,7 +1736,7 @@
         "suggest": {
             "phpunit/php-invoker": "~1.1"
         },
-        "time": "2017-01-22 08:37:05",
+        "time": "2017-01-22T08:37:05+00:00",
         "bin": [
             "phpunit"
         ],
@@ -1792,7 +1792,7 @@
             "topthink/think-helper": "~1.0",
             "topthink/think-installer": "~1.0"
         },
-        "time": "2016-08-08 09:43:56",
+        "time": "2016-08-08T09:43:56+00:00",
         "type": "think-testing",
         "installation-source": "dist",
         "autoload": {
@@ -1813,5 +1813,40 @@
                 "email": "448901948@qq.com"
             }
         ]
+    },
+    {
+        "name": "gmars/tp5-qiniu",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gmars/qiniu-tp5.git",
+            "reference": "59abcee895a81822840af4e27620acb9e33db2bd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/gmars/qiniu-tp5/59abcee895a81822840af4e27620acb9e33db2bd.zip",
+            "reference": "59abcee895a81822840af4e27620acb9e33db2bd",
+            "shasum": ""
+        },
+        "time": "2017-04-25T13:03:06+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "gmars\\qiniu\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "weiyongqiang",
+                "email": "weiyongqiang@weiyongqiang.com"
+            }
+        ],
+        "description": "这是一个基于ThinkPHP5框架的扩展库，主要解决了文件上传七牛云的需求。当然在后边的更新中会提供七牛云中文件的管理功能以及bucket的管理，让tp5上传七牛云非常便捷。"
     }
 ]

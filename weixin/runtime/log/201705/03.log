@@ -1,0 +1,57 @@
+[ 2017-05-03T12:17:07+08:00 ] 127.0.0.1 127.0.0.1 GET /tp/weixin/weixin/public/index.php
+[ log ] www.php11.com/tp/weixin/weixin/public/index.php [运行时间：0.032411s][吞吐率：30.85req/s] [内存消耗：1,087.68kb] [文件加载：38]
+[ info ] [ LANG ] D:\weixin\tp\weixin\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1606910976; __utma=31890815.195797803.1493122233.1493122233.1493122233.1; __utmz=31890815.1493122233.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); d7c4___uniacid=1; d7c4___uid=1; Hm_lvt_407473d433e871de861cf818aa1405a1=1493004495,1493272402; pgv_si=s4489243648; PHPSESSID=1f4f27o274mfbh1n43lr5ddrd6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.php11.com/tp/weixin/weixin/public/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.php11.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\weixin\tp\weixin\weixin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-03T12:17:24+08:00 ] 127.0.0.1 127.0.0.1 GET /tp/weixin/weixin/public/index.php/admin/qiniuyun/index
+[ log ] www.php11.com/tp/weixin/weixin/public/index.php/admin/qiniuyun/index [运行时间：0.042546s][吞吐率：23.50req/s] [内存消耗：1,338.55kb] [文件加载：48]
+[ info ] [ LANG ] D:\weixin\tp\weixin\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'qiniuyun',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=1606910976; __utma=31890815.195797803.1493122233.1493122233.1493122233.1; __utmz=31890815.1493122233.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); d7c4___uniacid=1; d7c4___uid=1; Hm_lvt_407473d433e871de861cf818aa1405a1=1493004495,1493272402; pgv_si=s4489243648; PHPSESSID=1f4f27o274mfbh1n43lr5ddrd6',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.php11.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Qiniuyun->index[ D:\weixin\tp\weixin\weixin\application\admin\controller\Qiniuyun.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
