@@ -33,6 +33,10 @@ class ComposerStaticInit72a85f69782724a9ddb9dfee0362af6f
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'g' => 
+        array (
+            'gmars\\qiniu\\' => 12,
+        ),
         'W' => 
         array (
             'Workerman\\' => 10,
@@ -102,6 +106,10 @@ class ComposerStaticInit72a85f69782724a9ddb9dfee0362af6f
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'gmars\\qiniu\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gmars/tp5-qiniu',
         ),
         'Workerman\\' => 
         array (
