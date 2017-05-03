@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城主页</title>
+    <style>
+        *{
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none;font-size: 50px;
+        }
+        input{
+            width:auto;
+            height:50px;
+        }
+        .type button{
+            border-radius: 100px  ;width:80px;height:80px;background: white;margin:5%;cursor: pointer;
+        }
+        tr td{
+            color:dimgrey;font-size: 40px;
+        }
+        .log img{
+            width:50px;height:50px;margin-left: 30px;
+        }
+    </style>
+    <script src="../../../../public/js/jquery.js"></script>
+    <link rel="stylesheet" href="../../../../public/css/example.css"/>
+    <link rel="stylesheet" href="../../../../public/css/weui.css"/>
+</head>
+<body>
+<center>
+    <!--轮播图-->
+    <div>
+        {volist name="data.list" id="vo" }
+        <img src="../../../../public/img/{$vo.img}" class="imgs" style="width:100%;height:auto;" alt="轮播图图片">
+        {/volist}
+    </div>
+    <!--轮播图-->
+    <div class="type">
+        {volist name="data.type" id="vv" }
+        <a href="__URL__/majors?tid={$vv.tid}"><button style="color:{$vv['color']}">{$vv.tname}</button></a>
+        {/volist}
+    </div>
+
+    <!--馒头精选-->
+    <!--标题-->
+    <div  style="background:white;width:100%;line-height:40px;;height:40px;">
+       <div style="float: left;">※馒头精选</div>
+    <div style="float:right;"><a href="__URL__/major" style="color:gray;font-size: 40px;">更多></a></div>
+    </div>
+<br>
+    <!--内容列表-->
+    {volist name="data.list" id="vo" }
+    <a href="__URL__/detail?id={$vo.id}" class="detail" id="{$vo.id}">
+    <table style="border-top: 2px white solid;margin: 20px;">
+        <tr >
+            <td colspan="2" ><img src="../../../../public/img/{$vo.img}"  style="width:100%;height:auto;margin-bottom: 20px;" ></td>
+        </tr>
+        <tr>
+            <td colspan="2" >{$vo.title}</td>
+        </tr>
+        <tr>
+            <td style="float:left;width:30%;font-size: 35px;">分类：{$vo.tname}</td>
+            <td style="float:right;width:45%" class="log">
+                <img src="../../../../public/img/man.png"  alt=""><span>{$vo.look}</span>
+                <img src="../../../../public/img/hua.png"  alt=""><span>{$vo.zan}</span>
+                <img src="../../../../public/img/xiao.png"  alt=""><span>{$vo.comment}</span>
+            </td>
+        </tr>
+    </table>
+    </a>
+    {/volist}
+    <!--馒头精选-->
+    <!--查看更多往期课程-->
+    <div style="width:100%;height:350px;background: #f7f7fa;">
+        <a href="__URL__/major"><button style="width:600px;height:100px;margin-top:50px;color:#09bb07;border:1px #09bb07 solid;border-radius:50px;background: #f7f7fa;">查看更多往期课程</button></a>
+    </div>
+    {include file="home@index/footer" }
+</center>
+<center>
+
+</center>
+</body>
+</html>
+<script>
+    //轮播图
+    $(document).ready(function(){
+        var num=0;
+        var obj=$('.imgs');
+        obj.eq(num).show().siblings().hide();
+        setInterval(function(){
+
+            if(num<obj.length-1){
+                num=parseInt(num)+parseInt(1);
+            }else{
+                num=0;
+            }
+            obj.eq(num).show().siblings().hide();
+
+        },2000);
+    })
+    //下标的点击
+    $('.weui-tabbar a').hover(function(){
+        $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+    },function(){
+        $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+    })
+</script>

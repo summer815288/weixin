@@ -1,0 +1,45 @@
+<?php
+use think\Url;
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线直播</title>
+    <link rel="stylesheet" href="../../../../public/css/weui.css"/>
+    <link rel="stylesheet" href="../../../../public/css/example.css"/>
+    <script src="../../../../public/js/jquery.js"></script>
+    <style>
+        *{
+
+
+        }
+    </style>
+</head>
+<body>
+<center>
+    
+        <div class="weui-cells__title">
+            {foreach $video as $v}
+                <table style="padding: 20px;font-size: 50px;">
+                    <tr>
+                        <td>
+                            <a href="{:url('index/appstart')}?id={$v.video_id}" style="margin: auto">
+                            <img src="../../../../public/uploads/zhibo/{$v.video_img}" width="700" height="400">
+                                <p style="font-size: 30px;text-align: center;">{$v.video_name}</p>
+                            </a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><p style="font-size: 30px">{:date('Y-m-d H:i:s开始',$v.video_start)}&nbsp;|&nbsp;{:date('Y-m-d H:i:s结束',$v.video_end)}</p></td>
+                    </tr>
+                </table>
+            {/foreach}
+        </div>
+    <div style="width: 100%;height: 250px;"></div>
+    {include file="home@index/footer2" }
+</center>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<?php
+use think\Url;
+?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$videoData.video_name}</title>
+    <link rel="stylesheet" href="../../../../public/css/weui.css"/>
+    <link rel="stylesheet" href="../../../../public/css/example.css"/>
+    <script src="../../../../public/js/jquery.js"></script>
+    <style>
+        *{
+            padding: 20px;;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h2 style="font-size: 50px;font-weight: bolder">在线直播</h2>
+    <div class="weui-cells__title" style="width:100%;height:500px;">
+        {if condition="(($videoData.video_start elt $time) and ($time elt  $videoData.video_end))"}
+        <table>
+            <tr>
+                <td>
+                    <video width="auto" height="500" controls autobuffer>
+                        <source src="{$videoData.video_url}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
+                    </video>
+                </td>
+            </tr>
+        </table>
+        {elseif condition="($videoData.video_start egt $time)"/}
+        <div style="position:absolute;top:0px;left:0px;width:100%;height:550px;z-index:1;background: black;"  >
+            <div style="top:150px;position:absolute;left:30%;width:500px;height:100px;color:white;font-size:40px;">直播还未开始</div>
+            <a href="{:url('index/appVideo')}" style="text-decoration: none;color:white;">请观看其他视频</a></button>
+
+        </div>
+        {elseif condition="($videoData.video_end elt $time)"}
+        <div style="position:absolute;top:0px;left:0px;width:100%;height:550px;z-index:1;background: black;" >
+            <div style="top:150px;position:absolute;left:30%;width:500px;height:100px;color:white;font-size:40px;">直播已经结束</div>
+            <a href="{:url('index/appVideo')}" style="text-decoration: none;color:white;top:250px;position:absolute;left:25%;width:500px;height:100px;background:dimgrey;color:white;">请观看其他视频</a>
+
+        </div>
+        {/if}
+    </div>
+    {include file="home@index/footer2" }
+</center>
+</body>
+</html>

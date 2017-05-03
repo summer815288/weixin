@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的订单</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--<meta name="format-detection" content="telephone = no" />-->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="我的订单" />
+    <meta name="msapplication-TileColor" content="#090a0a">
+    <link rel="stylesheet" href="../../../../public/css/css_style.css">
+    <script type="text/javascript" src="../../../../public/js/zepto.min.js"></script>
+
+</head>
+<body class="grayBy">
+{foreach name="order" item="v"}
+<div class="order_box">
+    <div class="order_header">
+        <h2>手机号: {$v.phone}</h2>
+        <span class="up_icon"></span>
+    </div>
+    <ul class="order_list">
+        <li>
+         {if condition="$v.state eq 1"}
+            <a href="#">
+                <i class="pic"><img src="http://cdn.img.mtedu.com/xt1/400_400/uploadv2/images/app/6a/f7/05/6af7051a5bca76cf40477194f267175c6587.jpg" /></i>
+                <h2>用户名称:{$v.name} </h2>
+                <h2>订单号:{$v.out_trade_no} </h2>
+                <h2>数量:{$v.num}</h2>
+                <h3>时间:{$v.time}</h3>
+                <b>价格:¥ {$v.total_fee}</b>
+            </a>
+           {else /}
+
+            <h2>用户名称:{$v.name}</h2>
+             <h2 >订单号:{$v.out_trade_no} </h2>
+             <b>价格:¥ {$v.total_fee}</b>
+            <a href = 'http://120.24.79.110/weixin/public/index.php/home/personal/pay?out_trade_no={$v.out_trade_no}&subject={$v.subject}&total_fee={$v.total_fee}&show_url={$v.show_url}' style="width:100px;height:40px;background:orangered;color:white;align:center;">请您去支付！</a>
+
+            {/if}
+        </li>
+    </ul>
+</div>
+{/foreach}
+
+</body>
+</html>
+<script type="text/javascript">
+    $(".order_box").click(function () {
+        $(this).find(".order_list").toggle();
+    });
+</script>

@@ -1,0 +1,13 @@
+#deny from all
+##开启重写引擎
+RewriteEngine on
+##重写条件
+##（REQUEST_FILENAME:这是与请求相匹配的完整的本地文件系统的文件路径名或描述.
+##正则是：匹配所有的jpg|jpeg|gif|png|txt    NC代表不区分大小
+RewriteCond  %{REQUEST_FILENAME} .*\.(jpg|jpeg|gif|png|txt|MP4) [NC]
+#
+##重写条件 这里说明一下,我们是我们匹配所有的jpg|jpeg|gif|png|txt  但是inv.com不符合条件  !为取反的意思
+#RewriteCond %{HTTP_REFERER}  !^http://inv.com/.*$  [NC]
+#
+##重写规则  只要是符合上面条件的，一律重定向到404.html页面上
+RewriteRule .*  /123.gif

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../../../public/js/jquery.js"></script>
+</head>
+<body>
+<a href="{:url('Consultation/index')}">首页</a>
+<table border="1">
+    <tr>
+        <td>用户序号</td>
+        <td>用户称呼</td>
+        <td>联系方式</td>
+        <td>用户需求</td>
+        <td>所在公司</td>
+        <td>咨询时间</td>
+        <td>是否解决</td>
+    </tr>
+    {foreach name="arr" item="v"}
+    <tr>
+        <td>{$v.c_id}</td>
+        <td>{$v.c_name}</td>
+        <td>{$v.c_tel}</td>
+        <td>{$v.c_need}</td>
+        <td>{$v.c_pany}</td>
+        <td>{$v.c_time}</td>
+        <td>
+            {if($v.c_start)==0}
+           <span class="sp" id="{$v.c_id}">未解决</span>
+            {else}
+            <span>已解决</span>
+            {/if}
+        </td>
+
+    </tr>
+    {/foreach}
+</table>
+<script>
+    //修改未解决
+    $(".sp").click(function(){
+        var _this=$(this);
+        var id=_this.attr("id");
+        $.ajax({
+            type: "POST",
+            url: "{:url('update')}",
+            data:{id:id},
+            success: function(msg){
+                if(msg==1)
+                {
+                    _this.html("<span>已解决</span>");
+                }
+            }
+        });
+    })
+</script>
+</body>
+</html>

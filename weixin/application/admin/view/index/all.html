@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程展示</title>
+    <style>
+        .pagination{
+            display: inline-block;
+        }
+        .pagination li{
+            display:inline-block;
+        }
+
+    </style>
+    <script src="../../../../public/js/jquery.js"></script>
+</head>
+<body>
+<center>
+<!--课程所有的分类：-->
+    <!--<select  class="tid">-->
+        <!--{volist name="type" id="vo"}-->
+        <!--<option value="{$vo.tid}">{$vo.tname}</option>-->
+        <!--{/volist}-->
+    <!--</select>-->
+    <!--开始时间：<input type="text" class="begin" >&nbsp;&nbsp;&nbsp;-->
+    <!--结束时间：<input type="text" class="end">-->
+    <!--<input type="button" value="搜索" class="search">-->
+
+    <table>
+        <tr>
+            <td>图片名称</td>
+            <td>标题</td>
+            <td>描述</td>
+            <td>内容介绍</td>
+            <td>所属分类</td>
+            <td>视频地址</td>
+            <td>作者介绍</td>
+            <td>作者</td>
+            <td>添加时间</td>
+            <td>操作</td>
+        </tr>
+        <tbody class="tbody">
+        {foreach name="p.data" item="vo"}
+        <tr id="{$vo.id}">
+            <td>
+                <img src="../../../../public/img/{$vo.img}"  style="width:100px;height:100px;">
+            </td>
+            <td>{$vo.title}</td>
+            <td>{$vo.desc}</td>
+            <td>{$vo.content}</td>
+            <td>{$vo.tname}</td>
+            <td> <video src="../../../../public/video/{$vo.video}"  style="width:100px;height:100px;"></video></td>
+            <td>{$vo.man_desc}</td>
+            <td>{$vo.man}</td>
+            <td>{$vo.addtime}</td>
+            <td><a href="javascript:;" class="del">删除</a>||<a href="">修改</a></td>
+        </tr>
+        {/foreach}
+        </tbody>
+
+        <tr>
+            <td colspan="9">
+                总共{$p.total}页，每页显示3页，当前第{$p.current_page}页
+                {$page}
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
+<script>
+    //ajax删除
+    $('.del').click(function(){
+        var tr=$(this).parent().parent();
+        var id=tr.attr('id');
+        $.ajax({
+            type:'post',
+            data:{id:id},
+            url:'__URL__/del',
+            success:function(msg){
+              if(msg==1){
+                tr.remove();
+              }else{
+                  alert('删除失败');
+              }
+            }
+        })
+    })
+    //现在做搜索后分页
+    $('.search').click(function(){
+        var tid=$('.tid').val();
+        var begin=$('.begin').val();
+        var end=$('.end').val();
+        $.ajax({
+            type:'post',
+            data:{tid:tid,begin:begin,end:end},
+            url:'__URL__/search',
+            success:function(msg){
+                $.each(msg.p,function(k,vo){
+                    str=' <tr id="'+$vo.id+'"><td><img src="../../../../public/img/'+$vo.img+'"   style="width:100px;height:100px;"></td><td>'+$vo.title+'</td><td>'+$vo.desc+'</td><td>'+$vo.content+'</td><td>'+$vo.tname+'</td><td><video src="../../../../public/video/'+$vo.video+'"   style="width:100px;height:100px;"></video></td><td>'+$vo.man_desc+'</td><td>'+$vo.man+'</td><td>'+$vo.addtime+'</td><td><a href="javascript:;" class="del">删除</a>||<a href="">修改</a></td></tr>';
+                })
+                $('.tbody').html(str);
+            }
+        })
+
+    })
+</script>

@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="../../../../public/css/weui.css"/>
+    <link rel="stylesheet" href="../../../../public/css/example.css"/>
+    <script src="../../../../public/js/jquery.js"></script>
+    <style>
+        *{
+            padding: 20px;;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <form action="__URL__/register" method="post">
+    <h2>注册</h2>
+    <div class="weui-cells__title">
+
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input type="text" class="weui-input" style="font-size: 20px" placeholder="请输入手机号" id="mobile" name="mobile"><br>
+                </div>
+            </div>
+
+        <div class="weui-cell">
+
+            <div class="weui-cell__bd">
+                <input type="password" class="weui-input" style="font-size: 20px" placeholder="密码，6-16位位数字或之母，区分大小写" name="pwd">
+            </div>
+        </div>
+
+        <div class="weui-cell" >
+            <div class="weui-cell__bd">
+                 <input type="text" class="weui-input" placeholder="手机验证码" name="mobile_code" style="float: left;width: 80%;font-size: 20px">
+                <a href="javascript:;"  style="float: right;" id="zphone" class="weui-vcode-btn"  onclick="get_mobile_code();">获取验证码</a>
+            </div>
+        </div>
+        <input type="submit" class="weui-btn weui-btn_primary" style="cursor: pointer;font-size: 20px;" value="注册">
+        <div style="width: auto;height: 40px;"></div>
+        <a href="" style="float: left;font-size: 20px">收不到手机验证码吗？</a><a href="__URL__/login" style="float: right;font-size: 20px">直接登录</a><font style="float: right;font-size: 20px">已有账号？</font>
+        </div>
+        <input type="hidden" value="{$code}" id="send_code">
+    </form>
+</center>
+<script language="javascript">
+    function get_mobile_code(){
+        $.post('sms', {mobile:jQuery.trim($('#mobile').val()),send_code:$('#send_code').val()}, function(msg) {
+            alert(jQuery.trim(unescape(msg)));
+            if(msg=='�ύ�ɹ�'){
+                RemainTime();
+            }
+        });
+    };
+    var iTime = 59;
+    var Account;
+    function RemainTime(){
+        document.getElementById('zphone').disabled = true;
+        var iSecond,sSecond="",sTime="";
+        if (iTime >= 0){
+            iSecond = parseInt(iTime%60);
+            iMinute = parseInt(iTime/60);
+            if (iSecond >= 0){
+                if(iMinute>0){
+                    sSecond = iMinute + "��" + iSecond + "��";
+                }else{
+                    sSecond = iSecond + "��";
+                }
+            }
+            sTime=sSecond;
+            if(iTime==0){
+                clearTimeout(Account);
+                sTime='��ȡ�ֻ���֤��';
+                iTime = 59;
+                document.getElementById('zphone').disabled = false;
+            }else{
+                Account = setTimeout("RemainTime()",1000);
+                iTime=iTime-1;
+            }
+        }else{
+            sTime='û�е���ʱ';
+        }
+        document.getElementById('zphone').value = sTime;
+    }
+</script>
+</body>
+</html>
