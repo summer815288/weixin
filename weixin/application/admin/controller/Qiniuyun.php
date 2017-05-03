@@ -1,14 +1,29 @@
 <?php
 namespace app\admin\controller;
-use Qiniu\Auth;
 use think\Controller;
 use think\Request;
 use think\Url;
 use gmars\qiniu\Qiniu;
-
-class Qiniuyun extends Controller{
-    public function index(){
-        $qiniu = new Qiniu('8v7B76bPIWN_JGxza3dlcKHYjceXuoK2zQb1V8Fm','jTXo8zwLLz1Jbr-b_gwct45D6v3HZGJpD8c4Vd7H','summer');
-        var_dump($qiniu);
+use Qiniu\Auth;
+use Qiniu\Storage\UploadManager;
+class Qiniuyun extends Controller {
+    public function a(){
+        return view('a');
     }
+
+    public function index(){
+        //上传单个文件
+//        $qiniu = new Qiniu();
+//        $result = $qiniu->upload($_FILES['img']['tmp_name'],'summer');
+//        print_r($result);
+
+        //上传视频和多个图片
+//        set_time_limit(0);
+//        //print_r($_FILES);die;
+//        $img=$_FILES['img'];
+//        $qiniu = new Qiniu();
+//        $result = $qiniu->uploadAll($img,'summer');
+    }
+
+
 }

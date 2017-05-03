@@ -76,7 +76,7 @@ class Qiniu
      * @throws \Exception
      * 单文件上传，如果添加多个文件则只上传第一个
      */
-    public function upload($saveName = '', $bucket = '')
+        public function upload($saveName = '', $bucket = '')
     {
         $token = $this->_getUploadToken($bucket);
 
@@ -93,13 +93,46 @@ class Qiniu
         $infoArr = explode('.', $values[0]['name']);
         $extension = array_pop($infoArr);
         $fileInfo = $saveName . '.' . $extension;
-        list($ret, $err) = $uploadManager->putFile($token, $saveName, $values[0]['tmp_name']);
+        $filename=time().rand(1000,9999).'.'.$extension;
+        list($ret, $err) = $uploadManager->putFile($token, $filename, $values[0]['tmp_name']);
         if ($err !== null) {
             throw new Exception('上传出错'.serialize($err));
         }
         return $ret['key'];
     }
 
+    /**
+     * @param string $saveName
+     * @param string $bucket
+     * @return mixed
+     * @throws Exception
+     * @throws \Exception
+     * 多文件文件上传
+     */
+    public function uploadAll($img,$bucket = '')
+    {
+        $token = $this->_getUploadToken($bucket);
+        if (empty($img)) {
+            throw new Exception('没有文件被上传', 10002);
+        }
+
+        foreach ($_FILES['img'] as $k=>$v){
+            foreach ($v as $k1=>$v1){
+                $a[$k1][$k]=$v1;
+            }
+        }
+        foreach ($a as $k=>$v){
+            $hou=substr($v['type'],strpos($v['type'],'/')+1);
+            $filename=time().rand(1000,9999).'.'.$hou;
+            $uploadManager = new UploadManager();
+            list($ret, $err) = $uploadManager->putFile($token, $filename, $v['tmp_name']);
+            if ($err !== null) {
+                throw new Exception('上传出错'.serialize($err));
+            }
+
+        }
+        return $ret['key'];
+    }
     /**
      * @param $bucketName
      * @return mixed|string
