@@ -92,6 +92,7 @@
 
         var mobile=$.trim($("#mobile").val());
         var isPhone = /^([0-9]{3,4}-)?[0-9]{7,8}$/;
+        var pattern = new RegExp("[<~'!@#$%^&*()-+_=:>]");
         var isMob=/^((\+?86)|(\(\+86\)))?(13[012356789][0-9]{8}|15[012356789][0-9]{8}|18[02356789][0-9]{8}|147[0-9]{8}|1349[0-9]{7})$/;
         if(!isMob.test(mobile)&&!isPhone.test(mobile))
         {
@@ -106,10 +107,19 @@
             $("#name").focus();
             return false;
         }
-
+        if(pattern.test(name)){
+            alert("非法字符！");
+            $("#name").focus();
+            return false;
+        }
         var company=$.trim($("#company").val());
         if(company==null || company=="" || company==undefined){
             alert("公司不能为空");
+            $("#company").focus();
+            return false;
+        }
+        if(pattern.test(company)){
+            alert("非法字符！");
             $("#company").focus();
             return false;
         }
@@ -117,6 +127,11 @@
         if(openid ==null || openid=="" || openid==undefined){
             alert("需求不能为空");
             $("#name").focus();
+            return false;
+        }
+        if(pattern.test(openid)){
+            alert("非法字符！");
+            $("#openid").focus();
             return false;
         }
         $.ajax({
