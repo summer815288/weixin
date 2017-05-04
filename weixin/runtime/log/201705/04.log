@@ -1,0 +1,2520 @@
+[ 2017-05-04T14:20:53+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/
+[ log ] qq.cn/php_1/weixing/weixin/public/ [运行时间：3.673482s][吞吐率：0.27req/s] [内存消耗：1,086.66kb] [文件加载：38]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\web\wifi\php_1\weixing\weixin\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T14:21:38+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/index
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/index [运行时间：2.884802s][吞吐率：0.35req/s] [内存消耗：2,449.40kb] [文件加载：62]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.234658s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.383049s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` [ RunTime:0.206219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.088657s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.070134s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.083154s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 11 [ RunTime:0.001698s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 12 [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 12 [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 13 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 13 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 2 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 5 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 5 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 6 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 6 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 9 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 9 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 7 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 7 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 8 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 8 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.008465s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:21:53+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=12
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=12 [运行时间：2.121145s][吞吐率：0.47req/s] [内存消耗：2,393.60kb] [文件加载：63]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014232s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.019047s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '12' LIMIT 1 [ RunTime:0.158260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.025852s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.016320s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 12 [ RunTime:0.001160s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=12 [ RunTime:0.289245s ]
+[ error ] [8]未定义数组索引: arrComment[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:23:10+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.256600s][吞吐率：0.80req/s] [内存消耗：2,194.23kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010285s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.034141s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.001587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.024244s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.001353s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:23:17+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.117798s][吞吐率：0.89req/s] [内存消耗：2,180.20kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.014637s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.016186s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.020720s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001183s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.015461s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000715s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000887s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:23:26+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.114596s][吞吐率：0.90req/s] [内存消耗：2,180.49kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004903s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.027860s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.019515s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.011184s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000737s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:24:06+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.101354s][吞吐率：0.91req/s] [内存消耗：2,225.41kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005111s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.019430s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.010626s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.009300s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000517s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:24:29+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：0.035415s][吞吐率：28.24req/s] [内存消耗：1,144.96kb] [文件加载：41]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '$data' (T_VARIABLE)[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:24:44+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.093093s][吞吐率：0.91req/s] [内存消耗：2,225.41kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005985s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011695s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.009936s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.009152s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000561s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:27:13+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.092253s][吞吐率：0.92req/s] [内存消耗：2,225.38kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004140s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017581s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006137s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006813s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000396s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:28:42+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/hets/index
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index [运行时间：1.326486s][吞吐率：0.75req/s] [内存消耗：2,239.53kb] [文件加载：57]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'hets',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Hets->index[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Hets.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\hets\index.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.038028s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from het left join hetclass on het.cid = hetclass.cid [ RunTime:0.092166s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:28:44+08:00 ] 127.0.0.1 127.0.0.1 POST /php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.7513987038826742
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.7513987038826742 [运行时间：0.029078s][吞吐率：34.39req/s] [内存消耗：1,332.58kb] [文件加载：47]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'hets',
+    2 => 'index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.7513987038826742',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qq.cn',
+  'accept' => 'application/json',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T14:28:45+08:00 ] 127.0.0.1 127.0.0.1 POST /php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.3582273985618052
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.3582273985618052 [运行时间：0.032971s][吞吐率：30.33req/s] [内存消耗：1,332.54kb] [文件加载：47]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'hets',
+    2 => 'index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.3582273985618052',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qq.cn',
+  'accept' => 'application/json',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T14:28:45+08:00 ] 127.0.0.1 127.0.0.1 POST /php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.1647325474180137
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.1647325474180137 [运行时间：0.026417s][吞吐率：37.85req/s] [内存消耗：1,332.54kb] [文件加载：47]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'hets',
+    2 => 'index&cid=0&begin=5&count=5&action=appmsg_list&f=json&r=0.1647325474180137',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://qq.cn',
+  'accept' => 'application/json',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T14:28:47+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/hets/details?hid=8
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/hets/details?hid=8 [运行时间：1.056939s][吞吐率：0.95req/s] [内存消耗：2,233.60kb] [文件加载：57]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'hets',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/hets/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'hid' => '8',
+)
+[ info ] [ RUN ] app\home\controller\Hets->details[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Hets.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\hets\info.html [ array (
+  0 => 'arr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004972s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] select * from het where h_id =8 [ RunTime:0.000566s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:34:12+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/details?hid=8
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/details?hid=8 [运行时间：0.030481s][吞吐率：32.81req/s] [内存消耗：1,382.52kb] [文件加载：47]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'hid' => '8',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T14:34:21+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/ [运行时间：1.308964s][吞吐率：0.76req/s] [内存消耗：2,316.97kb] [文件加载：60]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009727s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.024063s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` [ RunTime:0.002243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.013894s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.012705s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.013152s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 11 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 12 [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 12 [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 13 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 13 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 2 [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 5 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 5 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 6 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 6 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 9 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 9 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 7 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 7 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 8 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 8 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.007304s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000428s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:34:25+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.149647s][吞吐率：0.87req/s] [内存消耗：2,225.17kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009212s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.032394s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.002032s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.021397s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.021295s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.001346s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000929s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000946s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:34:33+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/index
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/index [运行时间：1.140814s][吞吐率：0.88req/s] [内存消耗：2,317.09kb] [文件加载：60]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010097s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.033031s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` [ RunTime:0.001746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.012924s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.011702s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `comment` [ RunTime:0.006652s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 11 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 12 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 12 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 13 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 13 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 2 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 5 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 5 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 6 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 6 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 9 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 9 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 7 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '热顿' [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 7 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 8 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `comment` WHERE  `pid` = 8 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type` [ RunTime:0.005863s ]
+[ sql ] [ SQL ] SELECT * FROM `type` [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:34:40+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.143695s][吞吐率：0.87req/s] [内存消耗：2,225.53kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; Nexus 6 Build/LYZ28E) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010228s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.025272s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001782s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.022214s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.014668s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.001005s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:35:22+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.139381s][吞吐率：0.88req/s] [内存消耗：2,225.88kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004885s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.030237s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006654s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007782s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000553s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:151]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:35:52+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.073141s][吞吐率：0.93req/s] [内存消耗：2,180.64kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004286s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017048s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006458s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006723s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000397s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:36:03+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.079631s][吞吐率：0.93req/s] [内存消耗：2,180.80kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005757s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.016819s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006476s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007109s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:36:15+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.113814s][吞吐率：0.90req/s] [内存消耗：2,180.91kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.006055s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.030784s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.015016s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.014294s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000554s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:36:18+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.138296s][吞吐率：0.88req/s] [内存消耗：2,180.72kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.009478s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.033036s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.021810s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.012747s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000945s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:37:31+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.155316s][吞吐率：0.87req/s] [内存消耗：2,179.08kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.012244s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.016787s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.008235s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006241s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.058125s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:38:32+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.067373s][吞吐率：0.94req/s] [内存消耗：2,178.58kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004229s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008179s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006277s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006843s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:39:40+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.084840s][吞吐率：0.92req/s] [内存消耗：2,194.16kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.006071s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.013057s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.016581s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000839s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:39:46+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.120310s][吞吐率：0.89req/s] [内存消耗：2,194.16kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010025s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.032307s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.001663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.021342s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.001310s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:39:51+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.130638s][吞吐率：0.88req/s] [内存消耗：2,177.85kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010036s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.031589s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.022386s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001301s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.015068s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000769s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000940s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:42:16+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.112892s][吞吐率：0.90req/s] [内存消耗：2,178.33kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007518s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.023951s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.013929s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.014969s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.001066s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T14:42:18+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.077941s][吞吐率：0.93req/s] [内存消耗：2,177.97kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005141s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006850s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006436s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006159s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000412s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:18:28+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.422083s][吞吐率：0.70req/s] [内存消耗：2,171.68kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.010079s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.001232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.012958s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007682s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000456s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:19:00+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.084342s][吞吐率：0.92req/s] [内存消耗：2,171.56kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005494s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.010747s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.007374s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006655s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000536s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:19:09+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.089601s][吞吐率：0.92req/s] [内存消耗：2,172.79kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005986s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.016599s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.007923s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007663s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000420s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:19:19+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.246296s][吞吐率：0.80req/s] [内存消耗：2,269.36kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005322s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.008824s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.008576s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006812s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000438s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:21:05+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.254470s][吞吐率：0.80req/s] [内存消耗：2,239.39kb] [文件加载：61]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015234s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.082836s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.009517s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006704s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.001419s ]
+[ error ] [8]未定义数组索引: arrComment[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:21:19+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.102637s][吞吐率：0.91req/s] [内存消耗：2,193.77kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.019578s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.024173s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.009573s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.001321s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:38:02+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.110289s][吞吐率：0.90req/s] [内存消耗：2,194.71kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.030832s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017753s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.011513s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000566s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:39:35+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.073148s][吞吐率：0.93req/s] [内存消耗：2,194.15kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.006340s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017980s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007532s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000389s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:115]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:39:43+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.104092s][吞吐率：0.91req/s] [内存消耗：2,194.12kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007484s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.028769s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.017499s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000942s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:116]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:39:46+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.106190s][吞吐率：0.90req/s] [内存消耗：2,194.12kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008404s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.018363s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007621s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000433s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:116]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:41:03+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.069296s][吞吐率：0.94req/s] [内存消耗：2,194.12kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004791s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.012469s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007462s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000526s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:116]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:41:26+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.102681s][吞吐率：0.91req/s] [内存消耗：2,161.60kb] [文件加载：54]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.018032s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.025192s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.001205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.013369s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.001155s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:41:37+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.180537s][吞吐率：0.85req/s] [内存消耗：2,239.07kb] [文件加载：61]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.013200s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011622s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.008356s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.009179s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000489s ]
+[ error ] [8]未定义数组索引: arrComment[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:41:40+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.085291s][吞吐率：0.92req/s] [内存消耗：2,239.07kb] [文件加载：61]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005413s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017100s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.008457s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.008602s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] select cid,pid,uid,comment,addTime,appNum,fid,path,account from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000465s ]
+[ error ] [8]未定义数组索引: arrComment[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:44:39+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=11
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=11 [运行时间：1.196275s][吞吐率：0.84req/s] [内存消耗：2,226.20kb] [文件加载：59]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008387s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017472s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '11' LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.006780s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜' [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '赵小喜'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.008231s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 11 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=11 [ RunTime:0.000531s ]
+[ error ] [8]未定义变量: arrCommentss[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:146]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:44:50+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.109179s][吞吐率：0.90req/s] [内存消耗：2,241.27kb] [文件加载：61]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'arrComment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.008888s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.027992s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.001217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.015039s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007306s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000523s ]
+[ error ] [8]未定义变量: data[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:45:14+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.088872s][吞吐率：0.92req/s] [内存消耗：2,193.01kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.007112s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.022534s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.012051s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000753s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:113]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:45:15+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=17
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=17 [运行时间：1.071269s][吞吐率：0.93req/s] [内存消耗：2,192.48kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '17',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.004758s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017615s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '17' LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.008486s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 17 [ RunTime:0.000505s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:113]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:46:58+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=17
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=17 [运行时间：1.081494s][吞吐率：0.92req/s] [内存消耗：2,193.37kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '17',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.015582s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.011197s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '17' LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007230s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 17 [ RunTime:0.000452s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:113]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:47:02+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=1
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=1 [运行时间：1.082950s][吞吐率：0.92req/s] [内存消耗：2,193.01kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005925s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.014917s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '1' LIMIT 1 [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.015720s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 1 [ RunTime:0.000947s ]
+[ error ] [8]未定义变量: zan_count[H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php:113]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:47:05+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.083049s][吞吐率：0.92req/s] [内存消耗：2,241.27kb] [文件加载：61]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'arrComment',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005681s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.017990s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.007573s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.007761s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000553s ]
+[ error ] [8]未定义变量: data[H:\web\wifi\php_1\weixing\weixin\runtime\temp\c046397d427d20aea801e42cd2108e8d.php:156]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:48:23+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/index/detail?id=2
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2 [运行时间：1.125143s][吞吐率：0.89req/s] [内存消耗：2,269.41kb] [文件加载：58]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\home\controller\Index->detail[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\index\detail.html [ array (
+  0 => 'arr',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.005764s ] mysql:dbname=weixin;host=localhost;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.006796s ]
+[ sql ] [ SQL ] SELECT * FROM `product` INNER JOIN `type` `type` ON `product`.`tid`=`type`.`tid` WHERE  `product`.`id` = '2' LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zan` [ RunTime:0.007419s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳' [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `zan` WHERE  `man` = '刘佳'  AND `uid` = 0 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `look` [ RunTime:0.006867s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `uid` = 0 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `look` WHERE  `pid` = 2 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=2 [ RunTime:0.000381s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T16:48:33+08:00 ] 127.0.0.1 127.0.0.1 GET /php_1/weixing/weixin/public/index.php/home/login/login
+[ log ] qq.cn/php_1/weixing/weixin/public/index.php/home/login/login [运行时间：0.077713s][吞吐率：12.87req/s] [内存消耗：1,368.66kb] [文件加载：48]
+[ info ] [ LANG ] H:\web\wifi\php_1\weixing\weixin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=3171427328; Hm_lvt_91c9613acf14840c5b88007112a0878f=1493780131; PHPSESSID=tu2mcednol435vcmf8csfitif3; pgv_si=s9100041216',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://qq.cn/php_1/weixing/weixin/public/index.php/home/index/detail?id=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'qq.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Login->login[ H:\web\wifi\php_1\weixing\weixin\application\home\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:H:\web\wifi\php_1\weixing\weixin\public/../application/home\view\login\login.html[H:\web\wifi\php_1\weixing\weixin\thinkphp\library\think\view\driver\Think.php:80]
+
+---------------------------------------------------------------
