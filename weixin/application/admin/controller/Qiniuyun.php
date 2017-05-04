@@ -13,16 +13,16 @@ class Qiniuyun extends Controller {
 
     public function index(){
         //上传单个文件
-//        $qiniu = new Qiniu();
-//        $result = $qiniu->upload($_FILES['img']['tmp_name'],'summer');
+        $qiniu = new Qiniu();
+        $result = $qiniu->upload($_FILES['img']['tmp_name'],'summer');
 //        print_r($result);
 
         //上传视频和多个图片
-//        set_time_limit(0);
-//        //print_r($_FILES);die;
-//        $img=$_FILES['img'];
-//        $qiniu = new Qiniu();
-//        $result = $qiniu->uploadAll($img,'summer');
+        //set_time_limit(0);
+        //print_r($_FILES);die;
+        //$img=$_FILES['img'];
+       // $qiniu = new Qiniu();
+        //$result = $qiniu->uploadAll($img,'summer');
     }
 
 
