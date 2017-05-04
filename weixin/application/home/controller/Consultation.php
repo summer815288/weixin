@@ -18,15 +18,13 @@ class Consultation extends Controller
      */
     public function con_add()
     {
-        $name=$_POST['name'];//姓名
-        $mobile=$_POST['mobile'];//电话
-        $openid=$_POST['openid'];//需求
-        $company=$_POST['company'];//公司
+        $name=addslashes($_POST['name']);//姓名
+        $mobile=addslashes($_POST['mobile']);//电话
+        $openid=addslashes($_POST['openid']);//需求
+        $company=addslashes($_POST['company']);//公司
         $time=date('Y-m-d',time());//时间
         //根据用户的手机号判断是否咨询过没
-        $find=  Db::table('consultation')
-            ->where('c_tel',$mobile)
-            ->find();
+        $find= Db::query('select * from consultation where c_tel=:c_tel',['c_tel'=>$mobile]);
         if($find)
         {
             echo 1;
@@ -34,7 +32,7 @@ class Consultation extends Controller
         else
         {
             $data = ['c_name' =>$name, 'c_tel' =>$mobile,'c_need'=>$openid,'c_pany'=>$company,'c_time'=>$time];
-            $add=Db::table('consultation')->insert($data);
+            $add=Db::execute('insert into consultation (c_name,c_tel,c_need,c_pany,c_time) values (:c_name, :c_tel,:c_need,:c_pany,:c_time)',$data);
             if($add)
             {
                 echo 2;
