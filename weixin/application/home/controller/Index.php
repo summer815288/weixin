@@ -115,6 +115,8 @@ class Index extends Controller
             $arr['uid'] = $uid;
             //查询评论信息
             $arrComment = Db::query('select * from comment inner join `user` on `comment`.`uid` = `user`.`id` where `comment`.`pid`=' . $id);
+            // echo Db::getLastSql();
+            // var_dump($arrComment);die;
 
             $arrComments=$this->actionShu($arrComment);
 //            print_r($arrComments);die;
@@ -138,10 +140,10 @@ class Index extends Controller
               }
             }
 
-
+$data['arrComment'] = $arrComments;
             //默认是三级评论
 
-          return view('detail', ['arr' => $arr, 'arrComment' => $arrCommentss]);
+          return view('detail', ['arr' => $arr, 'data' => $data]);
         }
 
     }

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:83:"H:\web\wifi\php_11\weixing\weixin\public/../application/home\view\index\detail.html";i:1493817966;s:83:"H:\web\wifi\php_11\weixing\weixin\public/../application/home\view\index\footer.html";i:1493785476;}*/ ?>
 <?php
 use \think\Request;
 use \think\Session;
@@ -95,21 +96,21 @@ use \think\Session;
 </head>
 <body>
 <center>
-    {if condition="($arr.uid =='') "}
+    <?php if(($arr['uid'] =='')): ?>
     <div style="position:absolute;top:0px;left:0px;width:100%;height:550px;z-index:1;background: black;"  id="tans" style="font-size: 50px;">
         <div style="top:150px;position:absolute;left:30%;width:500px;height:100px;color:white;font-size:40px;">登录之后才可以观看的呦</div>
         <button style="top:250px;position:absolute;left:15%;width:300px;height:100px;background:dimgrey;color:white;" class="agains">试看5秒钟</button>
         <button style="top:250px;position:absolute;right:15%;width:300px;height:100px;background:red;color:white;" ><a href="__ROOT__/index.php/home/login/login" style="color:white;">登录</a></button>
     </div>
-    <video src="../../../../public/video/{$arr.video}" controls   style="width:100%;height:550px;" id="myVideo" ></video>
+    <video src="../../../../public/video/<?php echo $arr['video']; ?>" controls   style="width:100%;height:550px;" id="myVideo" ></video>
 
-    {else /}
-    <input type="hidden" value="../../../../public/video/{$arr.video}" class="video">
-    <!--<video src="../../../../public/video/{$arr.video}" controls   style="width:100%;height:550px;"  ></video>-->
+    <?php else: ?>
+    <input type="hidden" value="../../../../public/video/<?php echo $arr['video']; ?>" class="video">
+    <!--<video src="../../../../public/video/<?php echo $arr['video']; ?>" controls   style="width:100%;height:550px;"  ></video>-->
 
     <div id="danmup" style="font-size: 12px;"></div>
 
-    {/if}
+    <?php endif; ?>
     <div id="demo" style="color:#f9f9f9" ></div>
 
     <div class="cho" >
@@ -119,10 +120,10 @@ use \think\Session;
     <br><br>
     <div class="choo">
         <ul>
-            <li>{$arr.title}</li>
-            <li style="border:1px lightpink solid;width:100px;float:left;font-size: 40px;text-align: center">{$arr.tname}</li><br>
+            <li><?php echo $arr['title']; ?></li>
+            <li style="border:1px lightpink solid;width:100px;float:left;font-size: 40px;text-align: center"><?php echo $arr['tname']; ?></li><br>
             <li style="margin-top:20px;font-size: 35px;">
-                已有<span style="color:red;font-size: 40px;">{$arr.count}</span>个同学学过
+                已有<span style="color:red;font-size: 40px;"><?php echo $arr['count']; ?></span>个同学学过
                 <div></div>
 
             </li>
@@ -131,21 +132,21 @@ use \think\Session;
                 <div style="width:2%;background: green;margin-right:10px;float:left;height:25px;"></div>
                 <div >导师介绍</div>
             </li>
-            <li>{$arr.man}</li>
+            <li><?php echo $arr['man']; ?></li>
             <li style="text-align: center;">
-                {if condition="($arr.status ==0) "}
-                <div style="display: inline;"><span style="color:green;font-size: 40px;" class="zan"  pid="{$arr.id}" man="{$arr.man}"  uid="{$arr.uid}">喜欢就送老师花花吧</span></div>
-                {else /}
+                <?php if(($arr['status'] ==0)): ?>
+                <div style="display: inline;"><span style="color:green;font-size: 40px;" class="zan"  pid="<?php echo $arr['id']; ?>" man="<?php echo $arr['man']; ?>"  uid="<?php echo $arr['uid']; ?>">喜欢就送老师花花吧</span></div>
+                <?php else: ?>
                 <span style="color:grey;font-size: 40px;">已送花</span>
-                {/if}
-                <img src="../../../../public/img/hua.png"  style="width:60px;height:60px;margin-left: 20px;">(<span style="color:red;" class="zan_num">{$arr.zan}</span>)
+                <?php endif; ?>
+                <img src="../../../../public/img/hua.png"  style="width:60px;height:60px;margin-left: 20px;">(<span style="color:red;" class="zan_num"><?php echo $arr['zan']; ?></span>)
             </li>
-            <li class="article">{$arr.man_desc}</li>
+            <li class="article"><?php echo $arr['man_desc']; ?></li>
             <li>
                 <div style="width:2%;background: green;margin-right:10px;float:left;height:25px;"></div>
                 <div >简介</div>
             </li>
-            <li class="article">{$arr.desc}</li>
+            <li class="article"><?php echo $arr['desc']; ?></li>
         </ul>
         <ul class="rightawei" hidden>
         <if condition="$data['empty']==1" >
@@ -162,8 +163,7 @@ use \think\Session;
             <?php  if(isset($vC['son']['sons'])){?>
             <li style="margin-left: 5%"><?= $vC['son']['sons']['account']  ?>回复<?= $vC['son']['account']  ?>：</li>
             <li style="margin-left: 4%;word-wrap:break-word;">&nbsp;<?= $vC['son']['htmla']  ?><?= $vC['son']['sons']['comment']  ?>&nbsp;&nbsp;<span style="font-size: 30px;"><?=  $vC['son']['sons']['addTime']  ?></span></li>
-            <?php }?>
-            <?php }?>
+            <?php }}?>
             <li style="margin-left:70%;">
                 <span class="backCom" cid="<?=$vC['cid'] ?>"  uname="<?= $vC['account'] ?>" uid="<?= $vC['uid'] ?>" path="<?=$vC['path'] ?>">回复</span>|
                 <!-- 这里先用uid代替username,后面完善了，再修改 -->
@@ -204,7 +204,69 @@ use \think\Session;
     <!--尾部-->
     <link rel="stylesheet" href="../../../../public/css/example.css"/>
     <link rel="stylesheet" href="../../../../public/css/weui.css"/>
-    {include file="home@index/footer" }
+    <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尾部展示</title>
+    <script src="../../../../public/js/jquery.js"></script>
+    <link rel="stylesheet" href="../../../../public/css/example.css"/>
+    <link rel="stylesheet" href="../../../../public/css/weui.css"/>
+    <link rel="stylesheet" href="../../../../public/bootstrap/css/bootstrap.min.css">
+    <script src="../../../../public/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<center>
+    <!--尾部展示-->
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation" >
+        <div class="weui-tabbar" style="position: relative;">
+            <a href="<?php echo url('index/index'); ?>" class="weui-tabbar__item weui-bar__item_on" style="text-decoration: none;font-size: 50px;" >
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../../../../public/img/tabbar.png" alt="" class="weui-tabbar__icon" style="width:100px;height:100px;">
+                    </span>
+                <p class="weui-tabbar__label" style="font-size: 35px;">有范商学院</p>
+            </a>
+            <a href="<?php echo url('index/appVideo'); ?>" class="weui-tabbar__item"  style="text-decoration: none;font-size: 50px;">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../../../../public/img/tabbar.png" alt="" class="weui-tabbar__icon" style="width:100px;height:100px;">
+                    </span>
+                <p class="weui-tabbar__label"  style="font-size: 35px;">在线直播</p>
+            </a>
+
+            <a href="<?php echo url('consultation/index'); ?>" class="weui-tabbar__item"  style="text-decoration: none;font-size: 50px;">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../../../../public/img/tabbar.png" alt="" class="weui-tabbar__icon" style="width:100px;height:100px;" >
+                    </span>
+                <p class="weui-tabbar__label"  style="font-size: 35px;">咨询服务</p>
+            </a>
+            <a href="<?php echo url('league/lists'); ?>" class="weui-tabbar__item"  style="text-decoration: none;font-size: 50px;">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../../../../public/img/tabbar.png" alt="" class="weui-tabbar__icon" style="width:100px;height:100px;" >
+                    </span>
+                <p class="weui-tabbar__label"  style="font-size: 35px;">近期课程</p>
+            </a>
+            <a href="<?php echo url('personal/show'); ?>" class="weui-tabbar__item"  style="text-decoration: none;font-size: 50px;">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="../../../../public/img/tabbar.png" alt="" class="weui-tabbar__icon" style="width:100px;height:100px;">
+                    </span>
+                <p class="weui-tabbar__label"  style="font-size: 35px;">我的成长</p>
+            </a>
+
+        </div>
+    </nav>
+
+</center>
+</body>
+</html>
+<script>
+    $('.weui-tabbar a').hover(function(){
+        $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+    },function(){
+        $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+    })
+</script>
+
     <!--尾部-->
 </center>
 </body>
@@ -477,7 +539,7 @@ use \think\Session;
 <script src="../../../../public/lunbo/js/main.js"></script>
 <script>
     $("#danmup").DanmuPlayer({
-        src: "../../../../public/video/{$arr.video}",
+        src: "../../../../public/video/<?php echo $arr['video']; ?>",
         height: "550", //区域的高度
         width: "100%", //区域的宽度
         urlToGetDanmu:"__URL__/getData",

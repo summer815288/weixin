@@ -15,7 +15,7 @@ class Het extends Model{
 
     public function show(){
     	$arr = Db::query('select * from het left join hetclass on het.cid = hetclass.cid');
-    	// var_dump($arr);die;
+
       return $arr;
     }
 
